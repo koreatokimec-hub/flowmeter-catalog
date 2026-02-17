@@ -1238,4 +1238,9 @@ body.is-lightbox-open{
     font-size:18px;
   }
 }
+@media (max-width: 980px), (hover: none) and (pointer: coarse) {
+  .home-page .mobile-qr-wrap {
+    display: none !important;
+  }
+}
 
