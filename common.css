@@ -455,6 +455,7 @@ body:not(.detail-page) .topbar .wrap{
 }
 .side-links a[data-product-link].active > span:first-child{font-weight:800}
 .mobile-qr-wrap{
+  display:none;
   margin:40px 0 12px;
   padding:14px 10px 10px;
   border:0;
@@ -519,6 +520,12 @@ body:not(.detail-page) .topbar .wrap{
 .mobile-copy-status.is-error{
   color:#b91c1c;
 }
+@media (min-width: 981px){
+  .home-page .mobile-qr-wrap{
+    display:block !important;
+  }
+}
+
 .pill{
   flex:0 0 auto;
   font-size:13px;
@@ -1243,4 +1250,5 @@ body.is-lightbox-open{
     display: none !important;
   }
 }
+
 
