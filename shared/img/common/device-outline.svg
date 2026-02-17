@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="장비 외형 이미지">
+  <defs>
+    <linearGradient id="topFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7dde3"/>
+      <stop offset="100%" stop-color="#c2cbd4"/>
+    </linearGradient>
+    <linearGradient id="sideFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bcc6d1"/>
+      <stop offset="100%" stop-color="#9eaab8"/>
+    </linearGradient>
+    <linearGradient id="frontFace" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#adb8c6"/>
+      <stop offset="100%" stop-color="#8f9cad"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#334155" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="#eef2f6"/>
+
+  <g transform="translate(210 130)" filter="url(#softShadow)">
+    <polygon points="120,30 660,120 540,380 20,300" fill="url(#topFace)" stroke="#7b8798" stroke-width="4"/>
+    <polygon points="20,300 540,380 540,560 20,470" fill="url(#sideFace)" stroke="#6b7688" stroke-width="4"/>
+    <polygon points="540,380 660,120 660,305 540,560" fill="url(#frontFace)" stroke="#627083" stroke-width="4"/>
+
+    <rect x="250" y="120" width="180" height="88" rx="10" fill="#3f4d5f" stroke="#1f2937" stroke-width="4"/>
+    <rect x="274" y="143" width="132" height="38" rx="6" fill="#a9ff8f"/>
+    <circle cx="300" cy="196" r="6" fill="#111827"/>
+    <circle cx="327" cy="196" r="6" fill="#111827"/>
+    <circle cx="354" cy="196" r="6" fill="#111827"/>
+
+    <circle cx="574" cy="430" r="26" fill="#dce3eb" stroke="#7a8798" stroke-width="4"/>
+    <circle cx="620" cy="415" r="22" fill="#dce3eb" stroke="#7a8798" stroke-width="4"/>
+    <circle cx="634" cy="462" r="22" fill="#dce3eb" stroke="#7a8798" stroke-width="4"/>
+    <circle cx="584" cy="478" r="22" fill="#dce3eb" stroke="#7a8798" stroke-width="4"/>
+
+    <rect x="50" y="500" width="22" height="64" rx="6" fill="#8a97a8"/>
+    <rect x="500" y="540" width="22" height="64" rx="6" fill="#8a97a8"/>
+  </g>
+</svg>

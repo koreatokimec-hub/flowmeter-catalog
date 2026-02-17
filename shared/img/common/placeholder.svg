@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="이미지 준비중">
+  <rect width="1200" height="800" fill="#f3f4f6"/>
+  <g fill="none" stroke="#cbd5e1" stroke-width="16">
+    <rect x="140" y="120" width="920" height="560" rx="24"/>
+    <path d="M220 560l210-210 150 150 170-170 230 230"/>
+    <circle cx="430" cy="280" r="48"/>
+  </g>
+  <text x="600" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#64748b">IMAGE PENDING</text>
+</svg>
