@@ -51,7 +51,7 @@
             <a href="#p-mhp" data-product-link data-detail-href="./mhp/index.html"><span>MHP</span><span class="pill">상세</span></a>
           </section>
         </nav>
-        <div class="mobile-qr-wrap" aria-label="모바일 접속 QR">
+        <div class="mobile-qr-wrap" aria-label="모바일 접속 QR" hidden>
           <p class="mobile-qr-title">모바일 접속 QR</p>
           <a class="mobile-qr-anchor" id="mobileQrAnchor" href="./home.html" target="_blank" rel="noopener noreferrer">
             <img id="mobileQrImg" alt="모바일 접속 QR 코드" loading="lazy" />
@@ -405,7 +405,23 @@
         });
       }
     };
-    setupMobileQr();
+    setupMobileQr();   
+
+    const syncMobileQrVisibility = () => {
+      const qrWrap = document.querySelector(".mobile-qr-wrap");
+      if (!qrWrap) return;
+      const ua = navigator.userAgent || "";
+      const isMobileUa = /Android|iPhone|iPad|iPod|Mobile/i.test(ua);
+      const isSmallViewport = window.innerWidth <= 980;
+      const isTouchLike = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+      const showForDesktop = !(isMobileUa || isSmallViewport || isTouchLike);
+      qrWrap.hidden = !showForDesktop;
+      qrWrap.style.display = showForDesktop ? "block" : "none";
+    };
+    syncMobileQrVisibility();
+    window.addEventListener("resize", syncMobileQrVisibility, { passive: true });
+    window.addEventListener("orientationchange", syncMobileQrVisibility, { passive: true });
+
 
     // Guide image loading for product cards
     const products = Array.from(document.querySelectorAll(".product"));
