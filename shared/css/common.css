@@ -828,7 +828,7 @@ body:not(.detail-page) .topbar .wrap {
 .pill:hover,
 .pill:focus-visible {
   background: #3b82f6;
-  color: #fff;
+  color: #000;
   transform: translateY(-1px) scale(1.08);
   box-shadow: none;
 }
@@ -1674,9 +1674,10 @@ body:not(.detail-page) .topbar .wrap {
 
 .contact-band__link {
   display: inline-block;
-  color: #1d4ed8;
+  color: #000 !important;
   text-decoration: none;
-  font-size: var(--sky-footer-body-size);
+  font-size: calc(var(--sky-footer-body-size) + 1px);
+  font-weight: 600;
   line-height: 1.4;
 }
 
@@ -1745,7 +1746,7 @@ body:not(.detail-page) .topbar .wrap {
   }
 
   .contact-band__link {
-    font-size: 14px
+    font-size: 15px
   }
 
   .contact-band__card-title {
